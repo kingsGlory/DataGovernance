@@ -1,9 +1,7 @@
 package com.webank.wedatasphere.dss.data.governance.exception;
 
 
-/**
- * @Author:李嘉玮
- */
+
 public class DAOException extends  RuntimeException {
     public  DAOException(){
         super();

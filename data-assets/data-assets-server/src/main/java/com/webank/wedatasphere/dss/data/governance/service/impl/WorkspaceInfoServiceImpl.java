@@ -27,10 +27,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.*;
 
-/**
- * @Author: chaogefeng
- * @Date: 2020/3/9
- */
+
 @Service
 public class WorkspaceInfoServiceImpl implements WorkspaceInfoService {
 

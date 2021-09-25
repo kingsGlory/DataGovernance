@@ -49,9 +49,7 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.Map.Entry;
 
-//import com.alibaba.fastjson.JSONArray;
-//import com.alibaba.fastjson.JSONObject;
-//import com.alibaba.fastjson.serializer.SerializerFeature;
+
 
 @SuppressWarnings("all")
 public final class HttpClientUtil {

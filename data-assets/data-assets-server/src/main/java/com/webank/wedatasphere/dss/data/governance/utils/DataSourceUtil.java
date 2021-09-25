@@ -5,12 +5,7 @@ import com.webank.wedatasphere.dss.data.governance.conf.GovernanceConf;
 
 import java.sql.Connection;
 
-/**
- * @Classname DataSourceUtil
- * @Description TODO
- * @Date 2021/8/23 15:36
- * @Created by suyc
- */
+
 public class DataSourceUtil {
     private static DruidDataSource druidDataSource =null;
 

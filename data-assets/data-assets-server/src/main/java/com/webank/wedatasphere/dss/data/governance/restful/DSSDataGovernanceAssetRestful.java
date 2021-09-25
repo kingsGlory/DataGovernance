@@ -29,13 +29,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/**
- * @Classname DSSDataGovernanceAssetRestful
- * @Description TODO
- * @Date 2021/8/19 13:53
- * @Created by suyc
- */
-@Path("/dss/data/governance/asset")
+
+@Path("/data-assets/asset")
 @Consumes(MediaType.APPLICATION_JSON)
 @Produces(MediaType.APPLICATION_JSON)
 @Component

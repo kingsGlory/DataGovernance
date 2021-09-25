@@ -16,17 +16,17 @@
  *
  */
 
-package com.webank.wedatasphere.dss.data.governance.service;
+package com.webank.wedatasphere.dss.data.governance
 
 
-import com.webank.wedatasphere.dss.data.governance.exception.DataGovernanceException;
+import com.webank.wedatasphere.linkis.{DataWorkCloudApplication, LinkisBaseServerApp}
+import com.webank.wedatasphere.linkis.common.utils.Logging
 
 
-import java.util.List;
+object DataAssetsApplication extends Logging {
 
 
-public interface WorkspaceInfoService {
-
-    public List<String> getWorkspaceUsers(int workspaceId,String search) throws DataGovernanceException;
-
+  def main(args: Array[String]): Unit = {
+    DataWorkCloudApplication.main(args)
+  }
 }

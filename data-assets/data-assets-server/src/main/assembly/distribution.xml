@@ -20,12 +20,12 @@
         xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/2.3"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/2.3 http://maven.apache.org/xsd/assembly-1.1.2.xsd">
-    <id>dss-data-governance-server</id>
+    <id>data-assets-server</id>
     <formats>
         <format>dir</format>
     </formats>
     <includeBaseDirectory>true</includeBaseDirectory>
-    <baseDirectory>dss-data-governance-server</baseDirectory>
+    <baseDirectory>data-assets-server</baseDirectory>
 
     <dependencySets>
         <dependencySet>
@@ -40,7 +40,33 @@
         </dependencySet>
     </dependencySets>
 
-
+    <fileSets>
+        <fileSet>
+            <directory>${basedir}/src/main/resources</directory>
+            <includes>
+                <include>*</include>
+            </includes>
+            <fileMode>0777</fileMode>
+            <outputDirectory>conf</outputDirectory>
+            <lineEnding>unix</lineEnding>
+        </fileSet>
+        <fileSet>
+            <directory>${basedir}/bin</directory>
+            <includes>
+                <include>*</include>
+            </includes>
+            <fileMode>0777</fileMode>
+            <outputDirectory>bin</outputDirectory>
+            <lineEnding>unix</lineEnding>
+        </fileSet>
+        <fileSet>
+            <directory>.</directory>
+            <excludes>
+                <exclude>*/**</exclude>
+            </excludes>
+            <outputDirectory>logs</outputDirectory>
+        </fileSet>
+    </fileSets>
 
 </assembly>
 

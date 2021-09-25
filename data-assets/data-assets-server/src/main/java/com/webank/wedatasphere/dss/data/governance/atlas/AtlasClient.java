@@ -12,12 +12,7 @@ import javax.ws.rs.core.Response;
 import java.util.List;
 import java.util.Set;
 
-/**
- * @Classname AtlasClient
- * @Description TODO
- * @Date 2021/8/19 14:17
- * @Created by suyc
- */
+
 public class AtlasClient extends AtlasClientV2 {
     // Entities APIs
     public static final String ENTITIES_API   = BASE_URI + "entities/";

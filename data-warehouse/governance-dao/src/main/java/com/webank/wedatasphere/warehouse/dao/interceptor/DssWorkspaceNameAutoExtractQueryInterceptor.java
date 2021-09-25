@@ -1,7 +1,6 @@
 package com.webank.wedatasphere.warehouse.dao.interceptor;
 
 
-import com.webank.wedatasphere.warehouse.dao.domain.common.DssWorkspaceEntity;
 import lombok.AllArgsConstructor;
 import org.apache.ibatis.executor.resultset.DefaultResultSetHandler;
 import org.apache.ibatis.executor.resultset.ResultSetHandler;

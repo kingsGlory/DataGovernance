@@ -8,7 +8,6 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.webank.wedatasphere.dss.data.governance.conf.GovernanceConf;
-import com.webank.wedatasphere.dss.data.governance.atlas.AtlasClient;
 import org.apache.atlas.ApplicationProperties;
 import org.apache.atlas.AtlasException;
 import org.apache.atlas.AtlasServiceException;
@@ -26,19 +25,14 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/**
- * @Classname AtlasServiceImpl
- * @Description TODO
- * @Date 2021/8/20 9:21
- * @Created by suyc
- */
+
 @Service("atlasService")
 public class AtlasService {
     private final AtlasClient atlasClient;
     private final Gson gson;
 
     public AtlasService() throws AtlasException {
-        Configuration configuration = ApplicationProperties.get("dss-data-governance-server.properties");
+        Configuration configuration = ApplicationProperties.get("linkis.properties");
         String[] urls =new String[]{GovernanceConf.ATLAS_REST_ADDRESS.getValue()};
         String[] basicAuthUsernamePassword =new String[]{ GovernanceConf.ATLAS_USERNAME.getValue(),GovernanceConf.ATLAS_PASSWORD.getValue()};
 

@@ -16,6 +16,8 @@
         <module>data-warehouse-service</module>
         <module>data-warehouse-mybatis</module>
         <module>data-warehouse-client</module>
+        <module>governance-dao</module>
+        <module>governance-plugins</module>
     </modules>
 
     <properties>

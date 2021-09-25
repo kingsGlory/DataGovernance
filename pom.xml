@@ -67,7 +67,6 @@
 	</properties>
 
 	<modules>
-		<module>governance-dao</module>
 		<module>data-warehouse</module>
 		<module>data-assets</module>
 	</modules>

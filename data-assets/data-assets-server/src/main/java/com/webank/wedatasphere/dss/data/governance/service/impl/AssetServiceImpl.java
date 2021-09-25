@@ -20,12 +20,7 @@ import java.sql.SQLException;
 import java.util.*;
 import java.util.stream.Collectors;
 
-/**
- * @Classname AssetServiceImpl
- * @Description TODO
- * @Date 2021/8/20 9:54
- * @Created by suyc
- */
+
 @Service
 public class AssetServiceImpl implements AssetService {
     private AtlasService atlasService;
